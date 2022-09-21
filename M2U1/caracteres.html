@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contador de caracteres</title>
+	<link rel="stylesheet" type="text/css" href="caracteres.css">
+   
+</head>
+<body>
+
+ <textarea id="cuadroTexto" placeholder="Escribir..."></textarea><br>
+ <div class= "div-estilo">Caracteres:<span id="contCaracter"></span></div>
+
+<script type="text/javascript">
+	
+        var cuadroTexto = document.getElementById('cuadroTexto');
+        var contCaracter = document.getElementById('contCaracter');
+
+        cuadroTexto.addEventListener('keyup', function(){
+           contCaracter.innerText = cuadroTexto.value.length;
+
+        })
+
+</script>
+   
+</body>
+</html>
+
